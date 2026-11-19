@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation */
+nav {
+    background-color: #12343b;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+/* Home */
+.home {
+    height: 500px;
+    background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.home h1 {
+    font-size: 50px;
+}
+
+.home p {
+    margin: 20px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #ff6600;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+    text-align: center;
+}
+
+section h2 {
+    margin-bottom: 30px;
+}
+
+/* Destinations */
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.card {
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px;
+}
+
+.card p {
+    padding: 10px 15px 20px;
+}
+
+/* Packages */
+.packages {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.package {
+    background-color: #e0f2f1;
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    transition: 0.3s;
+}
+
+.package:hover {
+    transform: scale(1.05);
+}
+
+/* Adventure */
+.adventure {
+    background-color: #12343b;
+    color: white;
+}
+
+.activities {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.activities div {
+    background-color: #24545c;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.activities div:hover {
+    background-color: orange;
+}
+
+/* Why Choose Us */
+.why {
+    background-color: #f5f5f5;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.features div {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact */
+#contact {
+    background-color: #d9e8e8;
+}
+
+#contact p {
+    margin: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #12343b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .packages {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home h1 {
+        font-size: 35px;
+    }
+
+    section {
+        padding: 30px 15px;
+    }
+}
